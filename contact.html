@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sam Lawson - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-ixon" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/logo.png" alt="This is the website logo" class="page-header__item">
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active"> Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item"> About me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item"> Work</a>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item"> Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contact-info">
+    <h1>Contact me!</h1>
+    <div>
+      Sam Lawson <br>
+      Rugby <br>
+      United Kingdom
+      <br>
+      Telephone number: <a href="tel:07745970037"> 0774 597 0037</a><br>
+      Skype: <a href="skype:live:s.t.lawson"> User.Skype</a><br>
+      Email: <a href="mailto:s.t.lawson@gmail.com">me@gmail.com</a>
+      <a href="mailto:s.t.lawson@gmail.com">Contact me</a>
+      <form action="" method="post" id="contact-form">
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <input type="email" id="contact-email" required>
+
+        <label class="standard-label" for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" required><br>
+        <label class="standard-label" for="message">Message: </label>
+        <textarea maxlength="240" id="message" required></textarea>
+        <input type="submit" class="button" value="Send Message">
+      </form>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <p id="findmetext">Find me on</p>
+  <div>
+    <ul class="socialmedia">
+      <li>
+        <a href="#"><img src="img/github.svg" alt="Github"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/linkedin.svg" alt="Linkedin"></a>
+      </li>
+    </ul>
+  </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
