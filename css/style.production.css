@@ -60,7 +60,7 @@ a:active {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .button:hover,
@@ -75,7 +75,7 @@ button:focus {
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 30%;
   margin-right: 40px;
   border-radius: 50%;
 }
@@ -150,6 +150,42 @@ button:focus {
   background-color: #202931;
   color: #fff;
   padding: 0 10px 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 3px 19px 0 #000;
+  box-shadow: 4px 3px 19px 0 #000;
+}
+
+.grid__item:hover {
+  background-color: #202931;
+  color: #80ffcc;
+}
+
+.navigation-list__item {
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation-list__item:hover {
+  background: #eed490;
+  color: #202931;
+}
+
+table,
+td {
+  border: solid #000;
+  background-color: #eed490;
+  color: #124766;
+  border-collapse: collapse;
+}
+
+th {
+  border: solid #000;
+  background-color: #80ffcc;
+  color: #124766;
+  border-collapse: collapse;
 }
 
 .codetext {
@@ -172,13 +208,10 @@ button:focus {
 
 .grid__item:last-child {
   -ms-grid-column: 3;
-  grid-column-start: 3;
-  -ms-grid-column-span: 0;
-  grid-column-end: 3;
+  grid-column: 3 / 3;
   -ms-grid-row: 1;
-  grid-row-start: 1;
   -ms-grid-row-span: 2;
-  grid-row-end: 3;
+  grid-row: 1 / 3;
 }
 
 main {
@@ -240,6 +273,11 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.streetaddress {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .london-illustration {
